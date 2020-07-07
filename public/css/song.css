@@ -1,1 +1,47 @@
 /* song css */
+.playlist {
+  margin: 1rem;
+}
+
+.playlist li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-bottom: thin solid;
+}
+.song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: calc(100% / 3);
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+.song-title:hover {
+  transform: translateX(20px);
+  opacity: 0.3;
+  transition-duration: 0.3s;
+}
+.song-artist {
+  font-style: italic;
+}
+.song-rank {
+  font-size: 2rem;
+}
+footer {
+  text-align: center;
+  margin: 1rem 2rem;
+  border-top: solid thin;
+  overflow: hidden;
+}
+.menu-link {
+  padding: 1rem;
+}
+.menu-link:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}

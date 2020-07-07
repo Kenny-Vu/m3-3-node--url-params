@@ -1,0 +1,20 @@
+<%- include("../partials/header") %>
+<ul class="collection">
+<% books.forEach((book) => { %>
+    <li class="book">
+        <div class="book-info">
+        <img class="book-cover" src="<%-book.imgUrl%>" alt="<%- book.title%>">
+        </div>
+        <div class="book-info">
+            <span class="book-title"><%- book.title%></span>
+            <span class="book-author"><%- book.author%></span>
+        </div>
+        <div class="book-info">
+            <p><%- book.description%></p>
+        </div>
+    </li>
+<% }) %>
+</ul>
+
+</body>
+</html>

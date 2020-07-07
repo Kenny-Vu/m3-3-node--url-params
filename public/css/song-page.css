@@ -1,1 +1,33 @@
 /* song page css */
+.song-page-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.song-box {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 6px #999;
+  width: 50%;
+  height: 500px;
+  border-radius: 4px;
+}
+.song-box span:first-child {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.song-box span:nth-child(2) {
+  font-size: 1.5rem;
+  border-top: solid thin #999;
+  text-align: center;
+  width: 100%;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.song-box span:last-child {
+  font-size: 10rem;
+  opacity: 0.3;
+}

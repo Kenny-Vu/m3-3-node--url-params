@@ -1,0 +1,20 @@
+.book {
+  display: flex;
+  padding: 1rem;
+}
+.book-info {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  border-bottom: solid 1px;
+  padding: 1.5rem;
+}
+.book-cover {
+  object-fit: contain;
+}
+.book-title {
+  font-size: 2rem;
+}
+.book-author {
+  font-size: 1.5rem;
+}
