@@ -30,7 +30,6 @@ const handleSong = (req, res) => {
     });
   }
 };
-
 const handleLibrary = (req, res) => {
   res.status(200);
   res.render("pages/library", {
@@ -48,12 +47,20 @@ const handleBook = (req, res) => {
       index = books.indexOf(book);
     }
   });
-  const book = books[index];
-  res.status(200);
-  res.render("pages/bookPage", {
-    title: book.title,
-    book,
-  });
+  if (index) {
+    const book = books[index];
+    res.status(200);
+    res.render("pages/bookPage", {
+      title: book.title,
+      book,
+    });
+  } else {
+    res.status(404);
+    res.render("pages/fourOhFour", {
+      title: "I got nothing",
+      path: req.originalUrl,
+    });
+  }
 };
 const handleType = (req, res) => {
   const genre = req.params.genre;
@@ -69,7 +76,6 @@ const handleType = (req, res) => {
     newList,
   });
 };
-
 const app = express();
 
 app.use(morgan("dev"));

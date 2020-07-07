@@ -1,3 +1,25 @@
-.book-page {
+.page {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+.info {
+  margin: 1rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-size: 2rem;
+}
+.author {
+  font-size: 1.5rem;
+}
+.cover {
+  height: 400px;
+  width: 300px;
 }
